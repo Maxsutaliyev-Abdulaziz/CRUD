@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: 1px;
+
+}
+
+.box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border {
+    position: relative;
+    width: 79.47%;
+    height: 210px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: auto;
+    margin: 50px;
+
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(170, 170, 170);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(58, 58, 58);
+}
+
+.big-name {
+    position: sticky;
+    width: 1205px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9px;
+    min-height: 35px;
+    background: rgb(151, 160, 158);
+    color: rgb(48, 48, 48);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.big-box {
+    position: relative;
+    width: 1205px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    height: 35px;
+    background: white;
+    color: rgb(70, 70, 70);
+    transition: .5s;
+}
+
+.big-box:hover .pt {
+    background: rgb(236, 236, 236);
+}
+
+.big-box:hover {
+    background: rgb(236, 236, 236);
+}
+
+.ht {
+    text-align: center;
+    font-family: orbitron;
+    font-weight: 500;
+    background: rgb(151, 160, 158);
+}
+
+.pt {
+    text-align: center;
+    font-family: orbitron;
+    font-weight: 500;
+    background-color: white;
+    transition: .5s;
+}
+
+.ptb {
+    text-align: center;
+    font-family: orbitron;
+    font-weight: 500;
+    background-color: white;
+    transition: .5s;
+    min-width: 50px;
+    width: 50px;
+    max-width: 50px;
+    height: 35px;
+    border: none;
+    color: rgb(90, 133, 207);
+}
+
+.ptb:hover {
+    color: rgb(0, 94, 255);
+}
+
+.big-box:hover .ptb {
+    background: rgb(236, 236, 236);
+}
+
+.big-box:hover .edit {
+    background: rgb(236, 236, 236);
+}
+
+
+.id {
+    position: sticky;
+    top: 0;
+    left: 0;
+    position: sticky;
+    min-width: 40px;
+    width: 40px;
+    max-width: 40px;
+}
+
+.name {
+    min-width: 250px;
+    width: 250px;
+    max-width: 250px;
+}
+
+.age {
+    min-width: 65px;
+    width: 65px;
+    max-width: 65px;
+}
+
+.address {
+    min-width: 250px;
+    width: 250px;
+    max-width: 250px;
+}
+
+.status {
+    min-width: 100px;
+    width: 100px;
+    max-width: 100px;
+}
+
+.nickname {
+    min-width: 250px;
+    width: 100px;
+    max-width: 100px;
+}
+
+.univ {
+    min-width: 60px;
+    width: 60px;
+    max-width: 60px;
+}
+
+.job {
+    min-width: 90px;
+    width: 90px;
+    max-width: 90px;
+}
+
+.edit {
+    min-width: 100px;
+    width: 100px;
+    max-width: 100px;
+    position: sticky;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: .5s;
+}
+
+.edite{
+    background: rgb(151, 160, 158);
+}
+
+.savebtn {
+    position: absolute;
+    left: 0px;
+    animation: anime .14s 1 linear;
+}
+
+.cancelbtn {
+    color: rgb(221, 109, 109);
+    animation: anim .5s 1 linear;
+    position: absolute;
+    left: 50px;
+}
+
+@keyframes anime {
+    0% {
+        position: absolute;
+        left: 25px;
+    }
+    100% {
+        position: absolute;
+        left: 0px;
+    }
+
+}
+
+@keyframes anim {
+    0% {
+        position: absolute;
+        left: 25px;
+        background: rgb(255, 255, 255);
+    }
+
+    40% {
+        position: absolute;
+        left: 0px;
+        background: rgb(162, 162, 162);
+    }
+
+    100% {
+        position: absolute;
+        left: 50px;
+        background: white;
+
+    }
+
+}
+
+.cancelbtn:hover {
+    color: rgb(255, 0, 0);
+}
+.input{
+border: none;
+outline: none;
+height: 100%;
+}
