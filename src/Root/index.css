@@ -19,7 +19,7 @@
     width: 79.47%;
     height: 210px;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     overflow: auto;
